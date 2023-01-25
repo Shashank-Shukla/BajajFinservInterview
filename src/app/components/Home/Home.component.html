@@ -1,0 +1,23 @@
+<!-- <mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>Menu</mat-icon>
+  </button>
+
+  <span>Foolish Dev</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>Company-Logo</mat-icon>
+  </button>
+</mat-toolbar> -->
+
+<mat-toolbar color="primary" class="navBar">
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="ShowHideSideNav()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span class="WebTitle" [routerLink]="['dashboard']">Foolish Dev</span>
+  <span class="example-spacer"></span>
+  <mat-icon [routerLink]="['errorPath']">favorite</mat-icon>
+  <mat-icon [routerLink]="['errorPath']">share</mat-icon>
+</mat-toolbar>
+
+<app-Sidenav [hidden]="showDropdown" [ShowSideNav]="showDropdown"></app-Sidenav>

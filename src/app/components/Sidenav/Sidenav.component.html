@@ -1,0 +1,24 @@
+<div class="sidenav" (mouseenter)="ShowList()" (mouseleave)="HideList()">
+  <div class="logo-containers">
+    <!-- <button class="logo">
+      <mat-icon fontIcon="home" aria-label="OpenCloseNavbar"></mat-icon>
+    </button> -->
+    <ul class="sidenav-list" *ngIf="!showDropdown">
+      <li class="sidenav-list-items" *ngFor="let item of navItems">
+        <div class="sidenav-list-item-container">
+          <a href="" [routerLink]="[item.path]" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <span class="material-symbols-outlined">
+              {{item.iconName}}
+            </span>
+            <p [hidden]="!showList">{{item.label}}</p>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- <mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
+</mat-drawer-container> -->
+
