@@ -15,3 +15,25 @@
   margin: 1rem;
   border: 1px solid black;
 }
+
+.flip-switch{
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.flip-da-switch{
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  border-color: snow;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+  color: black;
+}

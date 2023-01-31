@@ -11,6 +11,9 @@ import { HomeComponent } from './components/Home/Home.component';
 import { SidenavComponent } from './components/Sidenav/Sidenav.component';
 import * as CanvasJSChart from '../assets/canvasjs.angular.component'
 import { EventsComponent } from './components/Events/Events.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 var CanvasJSAngularChart = CanvasJSChart.CanvasJSChart;
 
@@ -33,6 +36,9 @@ var CanvasJSAngularChart = CanvasJSChart.CanvasJSChart;
     MatSidenavModule,
     MatCardModule,
     MatTabsModule,
+    MatFormFieldModule,
+    MatTableModule,
+    CommonModule,
     MatProgressSpinnerModule
   ],
   providers: [],
